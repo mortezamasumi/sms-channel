@@ -19,7 +19,6 @@ class SMSChannel
         }
 
         if (method_exists($notification, 'succeeded')) {
-            /** @intelephense-ignore-next-line */
             $notification->succeeded($response);
         }
     }
