@@ -1,16 +1,24 @@
 {
-    "name": "nunomaduro/skeleton-php",
-    "description": "A skeleton repository for my packages",
-    "keywords": ["php", "skeleton", "package"],
+    "name": "mortezamasumi/sms-channel",
+    "description": "An SMS channel helper package",
+    "version": "v1.0",
+    "type": "library",
     "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "sms"
+    ],
+    "homepage": "https://github.com/mortezamasumi/sms-channel",
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Morteza Masumi",
+            "email": "morteza.masumi@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.3.0"
+        "php": "^8.3"
     },
     "require-dev": {
         "laravel/pint": "^1.18.1",
@@ -22,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NunoMaduro\\SkeletonPhp\\": "src/"
+            "Mortezamasumi\\SmsChannel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Mortezamasumi\\SmsChannel\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
