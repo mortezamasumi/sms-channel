@@ -47,6 +47,16 @@
             "pestphp/pest-plugin": true
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mortezamasumi\\SmsChannel\\SmsChannelServiceProvider"
+            ],
+            "aliases": {
+                "FilamentBase": "Mortezamasumi\\SmsChannel\\Facades\\SmsChannel"
+            }
+        }
+    },
     "scripts": {
         "refacto": "rector",
         "lint": "pint",
