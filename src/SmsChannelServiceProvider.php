@@ -10,8 +10,8 @@ class SmsChannelServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Notification::extend('sms', function ($app) {
-            return new SMSChannel();
-        });
+        Notification::extend('sms', fn() => new SMSChannel());
+
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'sms-channel');
     }
 }

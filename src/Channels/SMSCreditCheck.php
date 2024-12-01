@@ -9,24 +9,24 @@ class SMSCreditCheck
 {
     public function credit(): string|int
     {
-        if (method_exists($this, $smsHandler = config('app.sms.operator'))) {
+        if (method_exists($this, $smsHandler = config('app.sms.operator', 'fake'))) {
             return $this->$smsHandler();
         } else {
             return 'N/A';
         }
     }
 
-    public function fake(): string|int
+    protected function fake(): string|int
     {
         return 'N/A';
     }
 
-    public function sabanovin(): string|int
+    protected function sabanovin(): string|int
     {
         try {
             $response = Http::get(
                 'https://api.sabanovin.com/v1/'
-                . config('app.sms.api_key')
+                . config('app.sms.api_key', '')
                 . '/account/balance.json'
             );
 
