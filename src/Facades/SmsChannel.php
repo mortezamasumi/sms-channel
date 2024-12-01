@@ -3,7 +3,7 @@
 namespace Mortezamasumi\SmsChannel\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Mortezamasumi\MethodCache\SmsChannelService;
+use Mortezamasumi\SmsChannel\SmsChannelService;
 
 class SmsChannel extends Facade
 {

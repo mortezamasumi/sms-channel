@@ -1,5 +1,5 @@
 <?php
 
-namespace Mortezamasumi\MethodCache;
+namespace Mortezamasumi\SmsChannel;
 
 class SmsChannelService {}
